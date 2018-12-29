@@ -1,1 +1,1 @@
-const KEY = 'REDACTED';
+const KEY = 'AIzaSyBAR5M-iYLct9j9qco_1UKYa4H1NC_YQwg';
