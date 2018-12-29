@@ -1,10 +1,15 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import YouTube from '../apis/YouTube';
 
 class App extends React.Component {
 
     onSearchTermSubmit = (searchTerm) => {
-        console.log("Got: " + searchTerm);
+        YouTube.get('/search', {
+            params: {
+                q: searchTerm
+            }
+        });
     };
 
     render() {
