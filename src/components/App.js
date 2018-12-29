@@ -4,12 +4,14 @@ import YouTube from '../apis/YouTube';
 
 class App extends React.Component {
 
-    onSearchTermSubmit = (searchTerm) => {
-        YouTube.get('/search', {
+    onSearchTermSubmit = async (searchTerm) => {
+        const response = await YouTube.get('/search', {
             params: {
                 q: searchTerm
             }
         });
+
+        console.log(response);
     };
 
     render() {
