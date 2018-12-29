@@ -10,8 +10,6 @@ class App extends React.Component {
                 q: searchTerm
             }
         });
-
-        console.log(response);
     };
 
     render() {
