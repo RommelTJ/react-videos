@@ -8,6 +8,7 @@ class SearchBar extends React.Component {
                 <form className="ui form">
                     <div className="field">
                         <label>Video Search:</label>
+                        <input type="text" />
                     </div>
                 </form>
             </div>
