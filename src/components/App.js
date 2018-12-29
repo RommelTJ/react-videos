@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 class App extends React.Component {
 
     onSearchTermSubmit = (searchTerm) => {
-
+        console.log("Got: " + searchTerm);
     };
 
     render() {
