@@ -2,7 +2,11 @@ import React from 'react';
 
 const VideoItem = ({ video }) => {
 
-    return <div>{video.snippet.title}</div>;
+    return (
+        <div>
+            {video.snippet.title}
+        </div>
+    );
 
 };
 
