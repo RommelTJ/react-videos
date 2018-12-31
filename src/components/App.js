@@ -8,6 +8,10 @@ class App extends React.Component {
 
     state = { videos: [], selectedVideo: null };
 
+    componentDidMount() {
+        this.onSearchTermSubmit('StarCitizen');
+    }
+
     onSearchTermSubmit = async (searchTerm) => {
         const response = await YouTube.get('/search', {
             params: {
