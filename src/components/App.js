@@ -25,7 +25,7 @@ class App extends React.Component {
         return (
             <div className="ui container">
                 <SearchBar onSearchTermSubmit={this.onSearchTermSubmit} />
-                <VideoList videos={this.state.videos} />
+                <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
             </div>
         );
     }
