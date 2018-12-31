@@ -8,7 +8,9 @@ const VideoDetail = ({ video }) => {
 
     return (
         <div>
-            {video.snippet.title}
+            <div className="ui segment">
+                {video.snippet.title}
+            </div>
         </div>
     );
 
